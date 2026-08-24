@@ -9,7 +9,7 @@ name: Shivam
 # description: the profile of an engineer, researcher and software developer
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: images/circle_bw_crop.jpg
+avatar: images/shivam.jpg
 
 #
 # Flags below are optional
@@ -18,12 +18,12 @@ avatar: images/circle_bw_crop.jpg
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: shivam@iitbhilai.ac.in
   facebook:
   flickr:
   github: shivamlth27
   instagram:
-  linkedin:
+  linkedin: shivam-lth27
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter:

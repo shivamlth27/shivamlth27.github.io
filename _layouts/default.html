@@ -3,243 +3,140 @@
 
 <head>
   <title>{{ site.name }}</title>
-
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-
   <meta name="author" content="{{ site.name }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:60%;vertical-align:middle">
-              <h1>
-                Shivam
-              </h1>
-              <p>I am currently a joint M.Tech Research student at <a href="https://iisc.ac.in/">IISc</a>, working with the AI and LEAP Lab.
+  <table style="width:100%;max-width:800px;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr>
+      <td style="padding:0">
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <h1>Shivam</h1>
+              <p>
+                I am currently a joint M.Tech Research student at
+                <a href="https://iisc.ac.in/">Indian Institute of Science (IISc)</a>, working with the AI and LEAP Lab.
+                My interests include artificial intelligence, machine learning, large language models, and applied research systems.
               </p>
               <p>
-                My interests include artificial intelligence, machine learning, and research-driven systems.
-              </p>
-              <p>
-                This website is under construction as I adapt it for my academic profile.
+                I completed my B.Tech in Data Science and Artificial Intelligence at
+                <a href="https://www.iitbhilai.ac.in/">Indian Institute of Technology Bhilai</a>, where I worked on machine learning,
+                NLP, computer vision, and AI systems.
               </p>
               <p style="text-align:center">
-                <a href="https://github.com/shivamlth27">GitHub</a>
+                <a href="mailto:shivam@iitbhilai.ac.in">Email</a> &nbsp;/&nbsp;
+                <a href="mailto:shivam16103@gmail.com">Gmail</a> &nbsp;/&nbsp;
+                <a href="https://github.com/shivamlth27">GitHub</a> &nbsp;/&nbsp;
+                <a href="https://www.linkedin.com/in/shivam-lth27">LinkedIn</a> &nbsp;/&nbsp;
+                <a href="{{ site.baseurl }}/pdfs/Shivam_CV.pdf">CV</a>
               </p>
             </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/circle_bw_crop.jpg">
+            <td style="padding:2.5%;width:37%;max-width:37%">
+              <img style="width:100%;max-width:100%;border-radius:4px" alt="profile photo" src="{{ site.baseurl }}/images/shivam.jpg">
             </td>
           </tr>
         </table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research</h2>
+              <h2>Education</h2>
               <p>
-                I'm interested in computer vision, machine learning, optimization, graphics and robotics.
+                <strong>Indian Institute of Science (IISc)</strong><br>
+                Joint M.Tech Research student, AI and LEAP Lab
+              </p>
+              <p>
+                <strong>Indian Institute of Technology Bhilai</strong><br>
+                B.Tech in Data Science and Artificial Intelligence, CGPA: 8.74
               </p>
             </td>
           </tr>
         </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'research' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
-
-              <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-              <br>
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arxiv</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.youtube %}
-              <a href="{{post.youtube}}">youtube</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <br>
-        <br>
-        <br>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Intel Projects</h2>
-              <p>Besides my work on the RealSense depth sensors and the publications above, a sampling of my publicly disclosed work
+              <h2>Experience</h2>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:0 2.5% 1.5% 2.5%;width:100%;vertical-align:middle">
+              <h3>SRIP Intern, IIIT Bangalore</h3>
+              <br>
+              <em>Krishi AI: Precision Agriculture for Plant Health</em>, Jun 2024 - Aug 2024
+              <p>
+                Built a plant disease detection system by fine-tuning YOLOv11 on a custom dataset. Processed a 26 GB
+                dataset and achieved 99.14% accuracy, close to reported state-of-the-art performance.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:0 2.5% 1.5% 2.5%;width:100%;vertical-align:middle">
+              <h3>Amazon ML Summer School 2025</h3>
+              <br>
+              <em>Amazon Learning Program</em>, Aug 2025
+              <p>
+                Studied supervised learning, deep neural networks, generative AI, large language models, dimensionality
+                reduction, unsupervised learning, and sequential learning.
               </p>
             </td>
           </tr>
         </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'Intel' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              <em>{{post.categories}} {{post.course}}</em>
-              <br>
-              {{ post.date | date: "%Y-%m-%d" }}
-
-              <br>
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.patent %}
-              <a href="{{post.patent}}">patent</a> /
-              {% endif %}
-              {% if post.patent2 %}
-              <a href="{{post.patent2}}">patent #2</a> /
-              {% endif %}
-              {% if post.patent3 %}
-              <a href="{{post.patent3}}">patent #3</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <br>
-        <br>
-        <br>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Other Projects</h2>
-              <p> These include coursework, side projects and unpublished research work. 
+              <h2>Projects</h2>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:0 2.5% 1.5% 2.5%;width:100%;vertical-align:middle">
+              <h3>Unlearning Sensitive Content from Large Language Models</h3>
+              <p>
+                Developed a machine unlearning framework for LLMs using the TOFU dataset. Implemented gradient ascent,
+                KL minimization, and negative preference optimization on LLaMA-3.2-1B-Instruct, reaching 88.04%
+                forgetting effectiveness while preserving model utility.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:0 2.5% 1.5% 2.5%;width:100%;vertical-align:middle">
+              <h3>Analysis of News Repetition in Daily News Bulletin</h3>
+              <p>
+                Built an NLP pipeline for collecting, preprocessing, and analyzing news bulletin repetition. Used
+                sentence-transformer models for semantic similarity and Matplotlib/Seaborn for visual analysis.
               </p>
             </td>
           </tr>
         </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat != 'research' and cat != 'Intel' %}
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              <em>{{post.categories}} {{post.course}}</em>
-              <br>
-              {{ post.date | date: "%Y-%m-%d" }}
-
-              <br>
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.patent %}
-              <a href="{{post.patent}}">patent</a> /
-              {% endif %}
-              {% if post.patent2 %}
-              <a href="{{post.patent2}}">patent #2</a> /
-              {% endif %}
-              {% if post.patent3 %}
-              <a href="{{post.patent3}}">patent #3</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Skills</h2>
+              <p>
+                <strong>Programming:</strong> Python, C/C++, JavaScript.
+                <br>
+                <strong>Machine Learning:</strong> PyTorch, TensorFlow, Scikit-learn, OpenCV, NLTK, NumPy, Pandas.
+                <br>
+                <strong>Tools:</strong> Git, Docker, AWS, Linux.
+              </p>
             </td>
           </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
         </table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:0px">
+            <td style="padding:0">
               <br>
               <p style="text-align:center;font-size:small;">
-                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>
+                Design and source code adapted from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>.
               </p>
             </td>
           </tr>
