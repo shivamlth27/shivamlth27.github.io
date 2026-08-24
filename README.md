@@ -1,14 +1,21 @@
-# updated website
+# Shivam's academic website
 
-This repo is built on a fork of **Jekyll Now** from [this repository](https://github.com/barryclark/jekyll-now). **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
+This repository contains the Jekyll source for [shivamlth27.github.io](https://shivamlth27.github.io).
 
-The website design is just a modification of [Jon Barron's website](https://jonbarron.info/) and is converted for my own use, re-purposing my old markdown posts. **Feel free to use template for your own purposes**, but please respect copyright for all the images/content in my `images`, `pdfs`, `_posts` folders. 
+## Local preview
 
+Install Jekyll and run:
 
+```bash
+bundle exec jekyll serve
+```
 
-## issues
-* In general, jekyll will try to build a full page for every post. I skip that by forcing `permalink: /`. This creates multiple entries in sitemap.xml for index.html but is otherwise fine. 
-* If you want multiple paragraphs, consider using `excerpt_separator: <!--more-->` in `_config.yml`, for my own use I didn't need this. 
-* My own posts have lots of extra stuff left over from my old jekyll design ("author", long descriptions, etc.), feel free to ignore them
-* I use thumbnails, so I can upload arbitrary sized images but then only display small ones. The `_make_thumbnails.sh` script generates them and the html template looks in `tn/` for all images. 
-* I have three categories of post with slightly differerent formatting, so changing sizing requires edits in multiple paces. 
+Then open `http://127.0.0.1:4000`.
+
+## Site content
+
+- `index.html` provides the homepage entry point.
+- `_layouts/default.html` contains the profile and homepage sections.
+- `style.scss` contains the site styles.
+- `images/shivam.jpg` is the profile photo.
+- `pdfs/Shivam_CV.pdf` is the downloadable CV.
